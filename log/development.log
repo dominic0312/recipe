@@ -13,3 +13,33 @@ SGFzaHsABjoKQHVzZWR7AA==--fd359cc2ee7e06a32db03bd30dfec2943fda5f78
   Parameters: {"action"=>"properties", "controller"=>"rails/info"}
   [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_migrations: SELECT version FROM schema_migrations[0m
 Completed in 0.10018 (9 reqs/sec) | Rendering: 0.00334 (3%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/rails/info/properties]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-24 21:56:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--fd359cc2ee7e06a32db03bd30dfec2943fda5f78
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 0.00875 (114 reqs/sec) | Rendering: 0.00605 (69%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.000843)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000522)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.026528)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.009839)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000468)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000303)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090224130136)
+  [4;36;1mSQL (0.000178)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.006955)[0m   [0mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "title" varchar(255) DEFAULT NULL NULL, "content" text DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.006991)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090224130136')[0m
+  [4;35;1mSQL (0.000712)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000789)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000264)[0m   [0mPRAGMA index_list("posts")[0m
