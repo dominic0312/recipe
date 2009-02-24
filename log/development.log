@@ -1,0 +1,15 @@
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-24 21:27:05) [GET]
+  Session ID: a16f19569923e856a61f547fd65b9cef
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering home/index
+Completed in 0.00465 (214 reqs/sec) | Rendering: 0.00190 (40%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/Home]
+
+
+Processing InfoController#properties (for 127.0.0.1 at 2009-02-24 21:27:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--fd359cc2ee7e06a32db03bd30dfec2943fda5f78
+  Parameters: {"action"=>"properties", "controller"=>"rails/info"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_migrations: SELECT version FROM schema_migrations[0m
+Completed in 0.10018 (9 reqs/sec) | Rendering: 0.00334 (3%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/rails/info/properties]
